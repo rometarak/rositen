@@ -1,0 +1,8 @@
+prefix=/home/roisten/catkin_ws/devel
+
+Name: ublox_msg_filters
+Description: Description of ublox_msg_filters
+Version: 0.0.0
+Cflags: -I/home/roisten/catkin_ws/src/ublox/ublox_msg_filters/include
+Libs: -L${prefix}/lib 
+Requires: ublox_msgs message_filters
