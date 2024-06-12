@@ -11,7 +11,7 @@ from std_msgs.msg import Float32
 class Robot:
     def __init__(self):
         rospy.Subscriber('/gps/fix', NavSatFix, self.callback)
-
+        
         #rataste publisher
         self.left_pub = rospy.Publisher('Left_vel', Float32, queue_size=10)
         self.right_pub = rospy.Publisher('Right_vel', Float32, queue_size=10)
@@ -61,19 +61,12 @@ def calculate_error_angle(current_heading, target_bearing):
        error_angle -= 360
     return error_angle
 
-lasttime = 0
-i = 0
-#PID 
-Kp= 0.1270
-Ki = 0.000020
-Kd = 0.000002
-
-integral = 0.0
-previous_error = 0.0
-dt = 1e-6
+def calculate_speed(x1, y1, x2, y2, dt):                            #kiirus km/h
+    speed = (math.sqrt((x2 - x1)**2 + (y2 - y1)**2) / dt) * 3.6
+    return speed
 
 points = [] 
-with open('/home/roisten/catkin_ws/recordings/11-06-2024-12-13.csv', newline='') as csvfile:
+with open('/home/roisten/catkin_ws/recordings/11-06-2024-15-54.csv', newline='') as csvfile:
         spamreader = csv.reader(csvfile, quotechar='|')
         for row in spamreader:                         
             x = float(row[0])                                        
@@ -86,27 +79,37 @@ with open('/home/roisten/catkin_ws/recordings/11-06-2024-12-13.csv', newline='')
 robot = Robot()
 rospy.init_node('Robot', anonymous=True)
 
+#salvesta roboti asukoht käivitamisel
+prevX, prevY, prevZ = robot.get_enu()
+
+lasttime = rospy.get_time() - 1e-6
+i = 0                                       #punkti index
+#PID 
+Kp= 0.275 #0.275
+Ki = 0.00 #0.0
+Kd = 0.0000015 #0.00000
+
+integral = 0.0
+previous_error = 0.0
+
 while not rospy.is_shutdown():
     try:
-       
-        prev = robot.get_enu()
-        prevX, prevY, prevZ = prev
-        
-        current_time = rospy.get_time()
-        dt = (current_time-lasttime)
-        #if dt == 0:
-            #dt = 1e-6
-        lasttime = current_time
+        #current_time = rospy.get_time()
+        #dt = (current_time-lasttime)
+        #lasttime = current_time
         x, y, z = robot.get_enu()
 
         #PID#############################
         if x != prevX or y != prevY:
-
+            current_time =rospy.get_time()
+            dt = (current_time-lasttime)
+            lasttime = current_time 
             heading =calculate_heading(prevX, prevY, x, y)
-            prevX , prevY = x , y
             marker_heading = calculate_heading(x, y ,points[i][0],points[i][1])
             error = calculate_error_angle(heading,marker_heading)
-            print("error: ",error)
+            #print("error: ",error)
+            speed = calculate_speed(prevX, prevY, x, y, dt)
+            prevX, prevY, prevZ = x, y, z
         
             base_speed = 75.0  #Algkiirus
             #PID 
@@ -117,31 +120,31 @@ while not rospy.is_shutdown():
             
             control_signal = Kp * error + Ki * integral + Kd * derivative
             control_signal = max(min(control_signal, 100), -100)
-            print("PID out: ",control_signal)
+            #print("PID out: ",control_signal)
             #Vel out
             left_speed = base_speed - control_signal
             right_speed = base_speed + control_signal
-
     
             max_speed = 90.00
-            min_speed = 1.0
+            min_speed = -90.0
             left_speed = max(min(left_speed, max_speed), min_speed)
             right_speed = max(min(right_speed, max_speed), min_speed)
-            #left_speed = left_speed if abs(left_speed) > min_speed else (min_speed if left_speed > 0 else -min_speed)
-            #right_speed = right_speed if abs(right_speed) > min_speed else (min_speed if right_speed > 0 else -min_speed)
-            print(left_speed, right_speed)
+            if speed > 2:
+                left_speed, right_speed = left_speed*0.8, right_speed*0.8
+           #print(left_speed, right_speed)
     #publisher, mis loobib arduinole left ja right rataste väärtused!!!
             robot.send_vel(left_speed, right_speed)
-            print("Index:",i)
+            print("punkti Index:",i)
             #############
             #Threshold
             Inx = points[i][0] - x 
             Iny = points[i][1] - y
             In = math.sqrt(Inx**2+Iny**2)
-            print(In)
-            if In<=4:
+            print("kaugus meetrites", In)
+            if In<=0.6:
                     i= i+1
 
     except KeyboardInterrupt:
         print("Shutting down")
         break
+

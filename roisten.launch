@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
+  <arg name="topic_name" default="scan"/>
+  <arg name="frame_id" default="base_laser"/>
+  <arg name="port_name" default="/dev/ttyUSB0"/>
+  <arg name="port_baudrate" default="230400"/>
+  <arg name="fix_to_base_link" default="true"/>
+  
   <arg name="param_file_dir"      doc="directory to look for zed_f9p.yaml"
-                                  default="$(find ublox_gps)/config" />
+                                  default="$(find gps)" />
 
     <node pkg="rosserial_arduino" type="serial_node.py" name="serial">
        <param name="port" value="/dev/ttyACM0"/>
        <param name="baud" value="57600"/>
     </node>
-    <node pkg="pathfollower" type="path_follower.py" name="pathfollower">
-    </node>
     <node pkg="pathfollower" type="odometry.py" name="odometry">
     </node>
-    <node pkg="ldlidar_stl_ros" type="lidar_subpub.py" name="lidar_detector">
-    </node>
+    <!--<node pkg="ldlidar_stl_ros" type="lidar_subpub.py" name="lidar_detector">
+    </node>-->
+  <node name="LD19" pkg="ldlidar_stl_ros" type="ldlidar_stl_ros_node" output="screen" >
+      <!-- ldldiar message publisher node -->
+      <param name="product_name" value="LDLiDAR_LD19"/>
+      <param name="topic_name" value="$(arg topic_name)"/>
+      <param name="frame_id" value="$(arg frame_id)"/>
+      <param name="port_name" value ="$(arg port_name)"/>
+      <param name="port_baudrate" value ="$(arg port_baudrate)"/>
+      <!-- Set laser scan directon: -->
+      <!--    1. Set counterclockwise, example: <param name="laser_scan_dir" type="bool" value="true"/> -->
+      <!--    2. Set clockwise,        example: <param name="laser_scan_dir" type="bool" value="false"/> -->
+      <param name="laser_scan_dir" type="bool" value="true"/>
+      <!-- Angle crop setting, Mask data within the set angle range -->
+      <!--    1. Enable angle crop fuction: -->
+      <!--       1.1. enable angle crop,  example: <param name="enable_angle_crop_func" type="bool" value="true"/> -->
+      <!--       1.2. disable angle crop, example: <param name="enable_angle_crop_func" type="bool" value="false"/> -->
+      <param name="enable_angle_crop_func" type="bool" value="false"/>
+      <!--    2. Angle cropping interval setting, The distance and intensity data within the set angle range will be set to 0 --> 
+      <!--       angle >= "angle_crop_min" and angle <= "angle_crop_max", unit is degress -->
+      <param name="angle_crop_min" type="double" value="0.0"/>
+      <param name="angle_crop_max" type="double" value="30.0"/>
+ </node>
     <node pkg="gps" type="gps.py" name="gps">
     </node>
-</launch>
+
+    <node pkg="gps" type="corrections.py" name ="corrections">
+    </node>
+
+  </launch>

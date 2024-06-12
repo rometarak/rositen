@@ -19,7 +19,7 @@ def gps_callback(msg):
     
 rospy.init_node('recordpath', anonymous=True)
 rospy.Subscriber('/gps/fix', NavSatFix, gps_callback)
-rate = rospy.Rate(10)
+rate = rospy.Rate(1)
 
 rospy.spin()
 
