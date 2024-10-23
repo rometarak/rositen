@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/roisten/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/gtest/googletest",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/gtest/googletest",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_client",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROS_BUILD_SHARED_LIBS=1 -I/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/float64_test.dir/test/float64_test.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_client/test/float64_test.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_client/test/float64_test.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_client",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROS_BUILD_SHARED_LIBS=1 -I/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/subscriber_test.dir/test/subscriber_test.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_client/test/subscriber_test.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_client/test/subscriber_test.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_client",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROS_BUILD_SHARED_LIBS=1 -I/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/time_test.dir/test/time_test.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_client/test/time_test.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_client/test/time_test.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_client",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROS_BUILD_SHARED_LIBS=1 -I/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/time_test.dir/src/ros_lib/duration.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib/duration.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib/duration.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_client",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROS_BUILD_SHARED_LIBS=1 -I/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/time_test.dir/src/ros_lib/time.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib/time.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_client/src/ros_lib/time.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_server",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rosserial_server\\\" -I/home/roisten/catkin_ws/src/rosserial/rosserial_server/include -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_server/src/udp_socket_node.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_server/src/udp_socket_node.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_server",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rosserial_server\\\" -I/home/roisten/catkin_ws/src/rosserial/rosserial_server/include -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_server",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rosserial_server\\\" -Drosserial_server_lookup_EXPORTS -I/home/roisten/catkin_ws/src/rosserial/rosserial_server/include -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/python3.8  -g -fPIC   -o CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_server/src/msg_lookup.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_server/src/msg_lookup.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_server",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rosserial_server\\\" -I/home/roisten/catkin_ws/src/rosserial/rosserial_server/include -I/home/roisten/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_server/src/socket_node.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_server/src/socket_node.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/src/publish_node/main.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/src/publish_node/main.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/src/publish_node/main.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/core/ldlidar_driver.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/core/ldlidar_driver.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/dataprocess/lipkg.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/dataprocess/lipkg.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/filter/tofbf.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/filter/tofbf.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/logger/log_module.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/logger/log_module.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/logger/log_module.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/serialcom/serial_interface_linux.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/src/serialcom/serial_interface_linux.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/ldlidar_stl_ros",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ldlidar_stl_ros\\\" -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/include -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/core -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/dataprocess -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/filter -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/logger -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/networkcom -I/home/roisten/catkin_ws/src/ldlidar_stl_ros/ldlidar_driver/include/serialcom -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/ldlidar_stl_ros_listen_node.dir/src/listen_node/listen_node.cpp.o -c /home/roisten/catkin_ws/src/ldlidar_stl_ros/src/listen_node/listen_node.cpp",
+  "file": "/home/roisten/catkin_ws/src/ldlidar_stl_ros/src/listen_node/listen_node.cpp"
+},
+{
+  "directory": "/home/roisten/catkin_ws/src/build/rosserial/rosserial_test",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"rosserial_test\\\" -I/home/roisten/catkin_ws/src/rosserial/rosserial_test/include -I/home/roisten/catkin_ws/src/build/rosserial/rosserial_test/include -I/home/roisten/catkin_ws/src/build/devel/include -I/home/roisten/catkin_ws/src/rosserial/rosserial_server/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g   -DGTEST_HAS_PTHREAD=1 -o CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.o -c /home/roisten/catkin_ws/src/rosserial/rosserial_test/src/publish_subscribe.cpp",
+  "file": "/home/roisten/catkin_ws/src/rosserial/rosserial_test/src/publish_subscribe.cpp"
+}
+]

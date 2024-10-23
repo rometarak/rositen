@@ -52,6 +52,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "rosserial/rosserial_windows/catkin_generated/package.cmake"
   "rosserial/rosserial_xbee/catkin_generated/package.cmake"
   "rosserial/rosserial_xbee/catkin_generated/setup_py_interrogation.cmake"
+  "yolo/catkin_generated/ordered_paths.cmake"
+  "yolo/catkin_generated/package.cmake"
   "/home/roisten/catkin_ws/devel/share/rosserial_arduino/cmake/rosserial_arduino-msg-paths.cmake"
   "/home/roisten/catkin_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake"
   "/home/roisten/catkin_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig.cmake"
@@ -122,6 +124,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/roisten/catkin_ws/src/rosserial/rosserial_xbee/CMakeLists.txt"
   "/home/roisten/catkin_ws/src/rosserial/rosserial_xbee/package.xml"
   "/home/roisten/catkin_ws/src/rosserial/rosserial_xbee/setup.py"
+  "/home/roisten/catkin_ws/src/yolo/CMakeLists.txt"
+  "/home/roisten/catkin_ws/src/yolo/package.xml"
   "/opt/ros/noetic/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake"
   "/opt/ros/noetic/share/actionlib_msgs/cmake/actionlib_msgs-msg-extras.cmake"
   "/opt/ros/noetic/share/actionlib_msgs/cmake/actionlib_msgsConfig-version.cmake"
@@ -374,6 +378,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "rosserial/rosserial_embeddedlinux/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rosserial/rosserial_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rosserial/rosserial_windows/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "yolo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

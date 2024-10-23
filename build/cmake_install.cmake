@@ -149,6 +149,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/roisten/catkin_ws/build/rosserial/rosserial_embeddedlinux/cmake_install.cmake")
   include("/home/roisten/catkin_ws/build/rosserial/rosserial_test/cmake_install.cmake")
   include("/home/roisten/catkin_ws/build/rosserial/rosserial_windows/cmake_install.cmake")
+  include("/home/roisten/catkin_ws/build/yolo/cmake_install.cmake")
 
 endif()
 

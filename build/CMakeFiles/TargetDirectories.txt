@@ -275,3 +275,10 @@
 /home/roisten/catkin_ws/build/rosserial/rosserial_windows/CMakeFiles/test.dir
 /home/roisten/catkin_ws/build/rosserial/rosserial_windows/CMakeFiles/edit_cache.dir
 /home/roisten/catkin_ws/build/rosserial/rosserial_windows/CMakeFiles/rebuild_cache.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/install/strip.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/install/local.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/install.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/list_install_components.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/rebuild_cache.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/edit_cache.dir
+/home/roisten/catkin_ws/build/yolo/CMakeFiles/test.dir
